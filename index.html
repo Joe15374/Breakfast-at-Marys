@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="mobile.css">
     <script src="script.js" defer></script>
     <title>Breakfast at Marys</title>
 </head>
 <body>
+    <div class="dev-banner">
+        This website is currently under maintenance and is not open for public use.
+    </div>
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -22,7 +23,7 @@
                     searve delicious meals made with the best ingredients to start your day 
                     off right.
                 </p>
-                <button onclick="button"><a href="online.html">Order online for pickup</a></button>
+                <a href="online.html" class="btn">Order online for pickup</a>
             </div>
         </div>
     </header>
@@ -48,7 +49,7 @@
     <!-- End of Places Section -->
 
     <!-- Local Food Section -->
-    <articale id="local_food">
+    <article id="local_food">
         <div class="container">
             <div class="local_food_wrapper">
                 <div class="local_food_content">
@@ -76,109 +77,197 @@
                 <div class="menu_items_header">
                     <h2>Tacos</h2>
                     <div class="menu_items">
-                        <p>Asada</p>
-                        <img src="./images/asada.jpg" alt="">
-                        <p>Guisada</p>
-                        <img src="./images/guisada.jpg" alt="">
-                        <p>Beef Fajita</p>
-                        <img src="./images/beef fajita.jpg" alt="">
-                        <p>Chicken Fajita</p>
-                        <img src="./images/chicken fajita.jpg" alt="">
-                        <p>Pastor</p>
-                        <img src="./images/pastor.jpg" alt="">
-                        <p>Picadillo</p>
-                        <img src="./images/picadillo.jpg" alt="">
-                        <p>Chicharon</p>
-                        <img src="./images/chicharron.jpg" alt="">
-                        <p>Machacado</p>
-                        <img src="./images/machacado.jpg" alt="">
-                        <p>Bacon & Egg</p>
-                        <img src="./images/bacon_and_egg.jpg" alt="">
-                        <p>Papa Ranchera</p>
-                        <img src="./images/papa_ranchera.jpg" alt="">
-                        <p>Jamon & Huevos</p>
-                        <img src="./images/jamon_con_huevo.jpg" alt="">
-                        <p>Chorizo & Egg</p>
-                        <img src="./images/chorizo_and_egg.jpg" alt="">
-                        <p>Chilaquiles</p>
-                        <img src="./images/Chilaquiles.jpg" alt="">
-                        <p>Migas</p>
-                        <img src="./images/migas.jpg" alt="">
-                        <p>Bean & Chorizo</p>
-                        <img src="./images/bean_and_chorizo.jpg" alt="">
-                        <p>Bean & Cheese & Bacon</p>
-                        <img src="./images/bean_and_cheese_and_bacon.jpg" alt="">
-                        <p>Bean & Bacon</p>
-                        <img src="./images/bean_and_bacon.jpg" alt="">
-                        <p>Bean & Cheese</p>
-                        <img src="./images/bean_and_cheese.jpg" alt="">
-                        <p>Potato & Egg</p>
-                        <img src="./images/potato_and_egg.jpg" alt="">
+                        <div class="menu_item">
+                            <img src="./images/asada.jpg" alt="Asada taco">
+                            <p>Asada</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="./images/guisada.jpg" alt="Guisada taco">
+                            <p>Guisada</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="./images/beef fajita.jpg" alt="Beef fajita taco">
+                            <p>Beef fajita</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="./images/chicken fajita.jpg" alt="Chicken fajita taco">
+                            <p>Chicken Fajita</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="./images/pastor.jpg" alt="Pastor taco">
+                            <p>Pastor</p>
+                        </div>
+                        <div class="menu_item">    
+                            <img src="./images/picadillo.jpg" alt="Picadillo taco">
+                            <p>Picadillo</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/chicharron.jpg" alt="Chicaron taco">
+                            <p>Chicharon</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/machacado.jpg" alt="Machacado taco">
+                            <p>Machacado</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/bacon_and_egg.jpg" alt="Bacon and egg taco">
+                            <p>Bacon & Egg</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/papa_ranchera.jpg" alt="Papa ranchera taco">
+                            <p>Papa Ranchera</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/jamon_con_huevo.jpg" alt="Jamon con huevo taco">
+                            <p>Jamon & Huevos</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/chorizo_and_egg.jpg" alt="Chorizo and egg taco">
+                            <p>Chorizo & Egg</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/Chilaquiles.jpg" alt="Chilaqiles taco">
+                            <p>Chilaquiles</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/migas.jpg" alt="Migas taco">
+                            <p>Migas</p>
+                        </div>
+                        <div class="menu_item">    
+                            <img src="./images/bean_and_chorizo.jpg" alt="Bean and chorizo taco">
+                            <p>Bean & Chorizo</p>
+                        </div>
+                        <div class="menu_item">    
+                            <img src="./images/bean_and_cheese_and_bacon.jpg" alt="Bean bacon and cheese taco">
+                            <p>Bean & Cheese & Bacon</p>
+                        </div>
+                        <div class="menu_item">    
+                            <img src="./images/bean_and_bacon.jpg" alt="Bean and bacon taco">
+                            <p>Bean & Bacon</p>
+                        </div>    
+                        <div class="menu_item"> 
+                            <img src="./images/bean_and_cheese.jpg" alt="Bean and cheese taco">
+                            <p>Bean & Cheese</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/potato_and_egg.jpg" alt="Potato and egg taco">
+                            <p>Potato & Egg</p>
+                        </div>
                     </div>
                 </div>    
                 <div class="menu_plates_header">
                     <h2>Plates</h2>
                     <div class="menu_plates">
-                        <p>Asada</p>
-                        <img src="./images/asada.jpg" alt="">
-                        <p>Guisada</p>
-                        <img src="./images/guisada.jpg" alt="">
-                        <p>Beef Fajita</p>  
-                        <img src="./images/beef fajita.jpg" alt="">
-                        <p>Chicken Fajita</p>
-                        <img src="./images/chicken fajita.jpg" alt="">
-                        <p>Pastor</p>
-                        <img src="./images/pastor.jpg" alt="">
-                        <p>Picadillo</p>
-                        <img src="./images/picadillo.jpg" alt="">
-                        <p>Chicharon</p>
-                        <img src="./images/chicharron.jpg" alt="">
-                        <p>Machacado</p>
-                        <img src="./images/machacado.jpg" alt="">
-                        <p>Migas</p>
-                        <img src="./images/migas.jpg" alt="">
-                        <p>Chilaquiles</p>
-                        <img src="./images/Chilaquiles.jpg" alt="">
-                        <p>Huevos Al Gusto</p>
-                        <img src="./images/huevos_al_gusto.jpg" alt="">
-                        <p>Huevos Con Porkchop</p>
-                        <img src="./images/huevos_con_porkchop.jpg" alt="">
-                        <p>Huevos Rancheros</p>
-                        <img src="./images/huevos_rancheros.jpg" alt="">
+                        <div class="menu_item"> 
+                            <img src="./images/asada.jpg" alt="Asada plate">
+                            <p>Asada</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/guisada.jpg" alt="Guisada plate">
+                            <p>Guisada</p>
+                        </div>
+                        <div class="menu_item">       
+                            <img src="./images/beef fajita.jpg" alt="Beef fajita plate">
+                            <p>Beef Fajita</p>
+                        </div>
+                        <div class="menu_item">     
+                            <img src="./images/chicken fajita.jpg" alt="Chicken fajita plate">
+                            <p>Chicken Fajita</p>
+                        </div>
+                        <div class="menu_item">                           
+                            <img src="./images/pastor.jpg" alt="Pastor plate">
+                            <p>Pastor</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/picadillo.jpg" alt="Picadillo plate">
+                            <p>Picadillo</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/chicharron.jpg" alt="Chicharon plate">
+                            <p>Chicharon</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/machacado.jpg" alt="Machacado plate">
+                            <p>Machacado</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/migas.jpg" alt="Migas plate">
+                            <p>Migas</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/Chilaquiles.jpg" alt="Chilaquiles plate">
+                            <p>Chilaquiles</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/huevos_al_gusto.jpg" alt="Huevos al gusto plate">
+                            <p>Huevos Al Gusto</p>
+                        </div>
+                        <div class="menu_item">
+                            <img src="./images/huevos_con_porkchop.jpg" alt="Huevos con porkchop plate">
+                            <p>Huevos Con Porkchop</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/huevos_rancheros.jpg" alt="Huevos rancheros plate">
+                            <p>Huevos Rancheros</p>
+                        </div>
                     </div>  
                 </div>
                 <div class="menu_specialty_header">
                     <h2>Specialty</h2>
                     <div class="menu_specialty">
-                        <p>Mini Tacos</p>
-                        <img src="./images/mini_tacos.jpg" alt="">
-                        <p>Menudo</p>
-                        <img src="./images/menudo.jpg" alt="">
-                        <p>Gordita Plate</p>
-                        <img src="./images/gordita_plate.jpg" alt="">
-                        <p>Huaraches</p>
-                        <img src="./images/huaraches.jpg" alt="">
-                        <p>Tortas</p>
-                        <img src="./images/torta.jpg" alt="">
-                        <p>Burritos</p>
-                        <img src="./images/burrito.jpg" alt="">
-                        <p>Quesadillas</p>
-                        <img src="./images/quesadilla.jpg" alt="">
-                        <p>Hamburgers</p>
-                        <img src="./images/hamburger.jpg" alt="">
+                        <div class="menu_item"> 
+                            <img src="./images/mini_tacos.jpg" alt="Mini tacos">
+                            <p>Mini Tacos</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/menudo.jpg" alt="Menudo">
+                            <p>Menudo</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/gordita_plate.jpg" alt="Gordita plate">
+                            <p>Gordita Plate</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/huaraches.jpg" alt="Huaraches">
+                            <p>Huaraches</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/torta.jpg" alt="Torta">
+                            <p>Tortas</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/burrito.jpg" alt="Burrito">
+                            <p>Burritos</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/quesadilla.jpg" alt="Quesadilla">
+                            <p>Quesadillas</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/hamburger.jpg" alt="Hamberger">
+                            <p>Hamburger</p>
+                        </div>
                     </div>
                 </div>
                 <div class="menu_drinks_header">   
                     <h2>Drinks</h2>
                     <div class="menu_drinks">
-                        <p>Mexican Soda</p>
-                        <img src="./images/mexican_soda.jpg" alt="">
-                        <p>Coffee</p>
-                        <img src="./images/coffee.jpg" alt="">
-                        <p>Can Soda</p>
-                        <img src="./images/can_soda.jpg" alt="">
-                        <p>Bottled Water</p>
-                        <img src="./images/water.jpg" alt="">
+                        <div class="menu_item"> 
+                            <img src="./images/mexican_soda.jpg" alt="Mexican soda">
+                            <p>Mexican Soda</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/coffee.jpg" alt="Coffee">
+                            <p>Coffee</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/can_soda.jpg" alt="Can soda">
+                            <p>Can Soda</p>
+                        </div>
+                        <div class="menu_item"> 
+                            <img src="./images/water.jpg" alt="Water">
+                            <p>Bottled Water</p>
+                        </div>
                     </div>
                 </div>       
             </div>

@@ -21,6 +21,12 @@ body {
     background-color: lightgray;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /*===========Utility Classes===========*/
 
 
@@ -65,6 +71,7 @@ header .showcase_content p {
     font-weight: normal;
 }
 
+/*
 header .showcase_content button {
     width: 50%;
     outline: none;
@@ -93,6 +100,48 @@ header .showcase_content button:hover {
 header .showcase_content button:hover a {
     text-decoration: none;
     color: var(--DarkGray);
+}
+    */
+
+    .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: var(--White);
+    background-color: transparent;
+    border: 2px solid var(--White);
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--White);
+    color: var(--DarkGray);
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+.dev-banner {
+    background-color: #9e7f66;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 /*===========End of Header Section===========*/
 
@@ -144,16 +193,124 @@ header .showcase_content button:hover a {
     margin-bottom: 2rem;
 }
 
+/*
 #menu .menu_wrapper .menu_items, .menu_plates, .menu_specialty, .menu_drinks {
     display: grid;
     grid-template-columns: 100px auto 100px auto 100px auto;
     gap: 2rem;
     margin-bottom: 4rem;
 }
+*/
+.menu_items,
+.menu_plates,
+.menu_specialty,
+.menu_drinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}    
 
+/*
 #menu .menu_wrapper .menu_items img, .menu_plates img, 
 .menu_specialty img, .menu_drinks img {
     width: 25%;
     border-radius: 10px;
 }
+    */
+
+    .menu_item {
+    text-align: center;
+}
+
+.menu_item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu_item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
 /*===========End of Menu===========*/
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* Container spacing */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* HEADER FIX */
+    header .showcase_content {
+        width: 100%;              /* was 50% */
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    header .showcase_content h2 {
+        font-size: 2.5rem;        /* was 6.5rem (too big) */
+        line-height: 1.2;
+    }
+
+    header .showcase_content p {
+        width: 100%;              /* was 70% */
+        font-size: 1rem;
+    }
+
+    header .showcase_content button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* STACK SECTIONS (2 columns → 1 column) */
+    #places .place_wrapper,
+    #local_food .local_food_wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #places .place_wrapper p,
+    #local_food .local_food_wrapper p {
+        width: 100%;
+    }
+
+    /* 🔥 MENU FIX (BIGGEST ISSUE) */
+    #menu .menu_wrapper .menu_items,
+    #menu .menu_wrapper .menu_plates,
+    #menu .menu_wrapper .menu_specialty,
+    #menu .menu_wrapper .menu_drinks {
+        grid-template-columns: repeat(2, 1fr);  /* instead of 6 columns */
+        gap: 1rem;
+    }
+
+    /* Fix tiny images */
+    #menu .menu_wrapper img {
+        width: 100%;
+    }
+
+    /* Headings */
+    #menu .menu_wrapper h1 {
+        font-size: 2rem;
+    }
+
+    #menu .menu_wrapper h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 480px) {
+
+    #menu .menu_wrapper .menu_items,
+    #menu .menu_wrapper .menu_plates,
+    #menu .menu_wrapper .menu_specialty,
+    #menu .menu_wrapper .menu_drinks {
+        grid-template-columns: 1fr;   /* single column */
+    }
+
+    header .showcase_content h2 {
+        font-size: 2rem;
+    }
+}
